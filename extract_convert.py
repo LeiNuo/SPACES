@@ -3,11 +3,8 @@
 # 抽取式：数据转换
 # 科学空间：https://kexue.fm
 
-import os
 import json
-import numpy as np
 from tqdm import tqdm
-from bert4keras.snippets import open
 from bert4keras.snippets import text_segmentate
 from bert4keras.snippets import parallel_apply
 from snippets import *
@@ -95,7 +92,7 @@ if __name__ == '__main__':
     else:
         idxs = list(range(len(data)))
         np.random.shuffle(idxs)
-        json.dump(idxs, open(data_random_order_json, 'w'))
+        json.dumps(idxs, open(data_random_order_json, 'w'))
 
     data = [data[i] for i in idxs]
 

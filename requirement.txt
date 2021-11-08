@@ -1,0 +1,9 @@
+Package              Version
+-------------------- --------
+bert4keras           0.9.7
+tensorflow-gpu       1.14
+tqdm                 4.62.3
+numpy                1.21.3
+jieba                0.42.1
+Keras                2.3.1
+rouge                1.0.1
